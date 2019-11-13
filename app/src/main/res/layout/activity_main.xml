@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Data -->
+    <data>
+        <variable
+            name="viewModel"
+            type="com.eungpang.galaxyshotgun.model.GalaxyShotgunViewModel" />
+
+        <variable
+            name="bullet"
+            type="com.eungpang.galaxyshotgun.model.GalaxyShotgunViewModel" />
+
+        <variable
+            name="capacity"
+            type="com.eungpang.galaxyshotgun.model.GalaxyShotgunViewModel" />
+    </data>
+
+    <!-- Layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:id="@+id/llTop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="9"
+            android:padding="12dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/rlMiddle">
+
+            <TextView
+                android:textAlignment="center"
+                android:layout_weight="4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@{String.valueOf(viewModel.bullets)}"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/tvCountOfBullets"/>
+
+            <TextView
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="/"
+                android:textColor="@color/colorWhite"/>
+
+            <TextView
+                android:textAlignment="center"
+                android:layout_weight="4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@{String.valueOf(viewModel.capacities)}"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/tvCountOfCapacity"/>
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rlMiddle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:paddingTop="50dp"
+            android:paddingBottom="50dp"
+            android:background="@drawable/space"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/llTop"
+            app:layout_constraintBottom_toTopOf="@+id/llBottom">
+
+            <ImageView
+                android:id="@+id/deathStar"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/deathstar"/>
+
+            <ImageView
+                android:id="@+id/bullet"
+                android:layout_above="@+id/spaceShip"
+                android:layout_centerHorizontal="true"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/drawable_bullet"/>
+
+            <ImageView
+                android:id="@+id/spaceShip"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/spaceship"/>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llBottom"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:weightSum="3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rlMiddle"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+
+            <Button
+                android:id="@+id/btnBuyBullet"
+                android:layout_weight="1"
+                android:text="Buy Bullet + 10"
+                android:onClick="@{() -> viewModel.buyBullets()}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btnBuyCapacity"
+                android:layout_weight="1"
+                android:text="Buy Capacity + 10"
+                android:onClick="@{() -> viewModel.buyCapacity()}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btnBuyInfinite"
+                android:layout_weight="1"
+                android:text="Buy Infinite"
+                android:onClick="@{() -> viewModel.buyInfinite()}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

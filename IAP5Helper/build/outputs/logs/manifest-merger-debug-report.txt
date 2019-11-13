@@ -1,0 +1,71 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/nhnent/project/galaxy/IAP5Helper/src/main/AndroidManifest.xml:1:1-33:12
+INJECTED from /Users/nhnent/project/galaxy/IAP5Helper/src/main/AndroidManifest.xml:1:1-33:12
+INJECTED from /Users/nhnent/project/galaxy/IAP5Helper/src/main/AndroidManifest.xml:1:1-33:12
+INJECTED from /Users/nhnent/project/galaxy/IAP5Helper/src/main/AndroidManifest.xml:1:1-33:12
+INJECTED from /Users/nhnent/project/galaxy/IAP5Helper/src/main/AndroidManifest.xml:1:1-33:12
+INJECTED from /Users/nhnent/project/galaxy/IAP5Helper/src/main/AndroidManifest.xml:1:1-33:12
+INJECTED from /Users/nhnent/project/galaxy/IAP5Helper/src/main/AndroidManifest.xml:1:1-33:12
+	package
+		ADDED from /Users/nhnent/project/galaxy/IAP5Helper/src/main/AndroidManifest.xml:3:5-46
+		INJECTED from /Users/nhnent/project/galaxy/IAP5Helper/src/main/AndroidManifest.xml
+		INJECTED from /Users/nhnent/project/galaxy/IAP5Helper/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /Users/nhnent/project/galaxy/IAP5Helper/src/main/AndroidManifest.xml:5:5-32
+		INJECTED from /Users/nhnent/project/galaxy/IAP5Helper/src/main/AndroidManifest.xml
+		INJECTED from /Users/nhnent/project/galaxy/IAP5Helper/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/nhnent/project/galaxy/IAP5Helper/src/main/AndroidManifest.xml:2:5-63
+	android:versionCode
+		ADDED from /Users/nhnent/project/galaxy/IAP5Helper/src/main/AndroidManifest.xml:4:5-36
+		INJECTED from /Users/nhnent/project/galaxy/IAP5Helper/src/main/AndroidManifest.xml
+		INJECTED from /Users/nhnent/project/galaxy/IAP5Helper/src/main/AndroidManifest.xml
+application
+ADDED from /Users/nhnent/project/galaxy/IAP5Helper/src/main/AndroidManifest.xml:7:5-31:19
+activity#com.samsung.android.sdk.iap.lib.activity.DialogActivity
+ADDED from /Users/nhnent/project/galaxy/IAP5Helper/src/main/AndroidManifest.xml:10:9-13:61
+	android:configChanges
+		ADDED from /Users/nhnent/project/galaxy/IAP5Helper/src/main/AndroidManifest.xml:13:13-59
+	android:theme
+		ADDED from /Users/nhnent/project/galaxy/IAP5Helper/src/main/AndroidManifest.xml:12:13-47
+	android:name
+		ADDED from /Users/nhnent/project/galaxy/IAP5Helper/src/main/AndroidManifest.xml:11:13-83
+activity#com.samsung.android.sdk.iap.lib.activity.CheckPackageActivity
+ADDED from /Users/nhnent/project/galaxy/IAP5Helper/src/main/AndroidManifest.xml:15:9-18:61
+	android:configChanges
+		ADDED from /Users/nhnent/project/galaxy/IAP5Helper/src/main/AndroidManifest.xml:18:13-59
+	android:theme
+		ADDED from /Users/nhnent/project/galaxy/IAP5Helper/src/main/AndroidManifest.xml:17:13-47
+	android:name
+		ADDED from /Users/nhnent/project/galaxy/IAP5Helper/src/main/AndroidManifest.xml:16:13-89
+activity#com.samsung.android.sdk.iap.lib.activity.AccountActivity
+ADDED from /Users/nhnent/project/galaxy/IAP5Helper/src/main/AndroidManifest.xml:20:9-23:61
+	android:configChanges
+		ADDED from /Users/nhnent/project/galaxy/IAP5Helper/src/main/AndroidManifest.xml:23:13-59
+	android:theme
+		ADDED from /Users/nhnent/project/galaxy/IAP5Helper/src/main/AndroidManifest.xml:22:13-53
+	android:name
+		ADDED from /Users/nhnent/project/galaxy/IAP5Helper/src/main/AndroidManifest.xml:21:13-84
+activity#com.samsung.android.sdk.iap.lib.activity.PaymentActivity
+ADDED from /Users/nhnent/project/galaxy/IAP5Helper/src/main/AndroidManifest.xml:25:9-28:61
+	android:configChanges
+		ADDED from /Users/nhnent/project/galaxy/IAP5Helper/src/main/AndroidManifest.xml:28:13-59
+	android:theme
+		ADDED from /Users/nhnent/project/galaxy/IAP5Helper/src/main/AndroidManifest.xml:27:13-47
+	android:name
+		ADDED from /Users/nhnent/project/galaxy/IAP5Helper/src/main/AndroidManifest.xml:26:13-84
+uses-sdk
+INJECTED from /Users/nhnent/project/galaxy/IAP5Helper/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/nhnent/project/galaxy/IAP5Helper/src/main/AndroidManifest.xml
+INJECTED from /Users/nhnent/project/galaxy/IAP5Helper/src/main/AndroidManifest.xml
+INJECTED from /Users/nhnent/project/galaxy/IAP5Helper/src/main/AndroidManifest.xml
+INJECTED from /Users/nhnent/project/galaxy/IAP5Helper/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/nhnent/project/galaxy/IAP5Helper/src/main/AndroidManifest.xml
+		ADDED from /Users/nhnent/project/galaxy/IAP5Helper/src/main/AndroidManifest.xml
+		INJECTED from /Users/nhnent/project/galaxy/IAP5Helper/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/nhnent/project/galaxy/IAP5Helper/src/main/AndroidManifest.xml
+		ADDED from /Users/nhnent/project/galaxy/IAP5Helper/src/main/AndroidManifest.xml
+		INJECTED from /Users/nhnent/project/galaxy/IAP5Helper/src/main/AndroidManifest.xml
